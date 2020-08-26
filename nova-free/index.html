@@ -30,6 +30,12 @@
     <link rel="stylesheet" href="assets//css/animate.min.css">
     <link rel="stylesheet" href="assets/css/default.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
+    <script
+    type="text/javascript"
+    src="assets/plugins/jquery-3.3.1.min.js"
+  ></script>
+        <!-- 国际化 -->
+        <script src="./assets/lib/i18n/jquery.i18n.js"></script>  
   </head>
 
   <body>
@@ -99,13 +105,10 @@
     <section class="hero-section">
       <div class="container">
         <div class="row figure-holder">
-          <div class="col-12 col-md-6 pt-3 pt-md-4   animated bounceIn">
-            <h2 class="site-headline font-weight-bold mt-lg-5 pt-lg-5">
-              The best way to promote your app and convert users.
+          <div id="hero-section-left" class="col-12 col-md-6 pt-3 pt-md-4">
+            <h2 i18n="i18n.title1" class="site-headline font-weight-bold mt-lg-5 pt-lg-5">
             </h2>
-            <div class="site-tagline mb-3">
-              High converting Bootstrap landing page template made for app
-              developers. Built with Bootstrap 4 and Sass. Get started now!
+            <div i18n="i18n.title2" class="site-tagline mb-3">
             </div>
             <div class="cta-btns">
               <div class="mb-4">
@@ -258,17 +261,27 @@
         <h3 class="mb-3 text-center font-weight-bold section-heading">
           Feature Highlights
         </h3>
-        <div class="row pt-5 mb-5">
-          <div class="col-12 col-md-6 col-xl-5 offset-xl-1 d-none d-md-block">
+        <div class="row pt-5 mb-5 features-section-row">
+          <div style="position:relative" class="wow fadeInLeft  col-md-6 col-xl-5 offset-xl-1 d-none d-md-block">
             <img
               class="product-figure product-figure-1 img-fluid"
               src="assets/images/product-figure-1.png"
               alt=""
             />
+            
+            <!-- 闪烁的地图指标 -->
+            <div class="vault-tec-loader">
+              <div class="circles">
+                <div class="dot"></div>
+              </div>
+              <div class="left-lines"></div>
+              <div class="right-lines"></div>
+           </div>
+
           </div>
 
-          <div class="col-12 col-md-6 col-xl-5 pr-xl-3 pt-md-3">
-            <div class="card rounded border-0 shadow-lg mb-5">
+          <div class="feature-list col-12 col-md-6 col-xl-5 pr-xl-3 pt-md-3">
+            <div class="wow fadeInRight card rounded border-0 shadow-lg mb-5">
               <div class="card-body p-4">
                 <h5 class="card-title">
                   <i
@@ -292,7 +305,7 @@
             </div>
             <!--//card-->
 
-            <div class="card rounded border-0 shadow-lg mb-5">
+            <div class="wow fadeInRight card rounded border-0 shadow-lg mb-5">
               <div class="card-body p-4">
                 <h5 class="card-title">
                   <i
@@ -315,7 +328,7 @@
               </div>
             </div>
             <!--//card-->
-            <div class="card rounded border-0 shadow-lg">
+            <div class="wow fadeInRight  card rounded border-0 shadow-lg">
               <div class="card-body p-4">
                 <h5 class="card-title">
                   <i
@@ -343,7 +356,7 @@
 
         <div class="row">
           <div
-            class="col-12 col-md-6 col-xl-5 order-md-2 pr-xl-3 d-none d-md-block"
+            class="wow fadeInRight col-12 col-md-6 col-xl-5 order-md-2 pr-xl-3 d-none d-md-block"
           >
             <img
               class="product-figure product-figure-2 img-fluid"
@@ -351,8 +364,8 @@
               alt=""
             />
           </div>
-          <div class="col-12 col-md-6 col-xl-5 order-md-1 offset-xl-1 pt-xl-5">
-            <div class="card rounded border-0 shadow-lg mb-5">
+          <div class="feature-list col-12 col-md-6 col-xl-5 order-md-1 offset-xl-1 pt-xl-5">
+            <div class="wow fadeInLeft card rounded border-0 shadow-lg mb-5">
               <div class="card-body p-4">
                 <h5 class="card-title">
                   <i
@@ -377,7 +390,7 @@
             </div>
             <!--//card-->
 
-            <div class="card rounded border-0 shadow-lg">
+            <div class="wow fadeInLeft card rounded border-0 shadow-lg">
               <div class="card-body p-4">
                 <h5 class="card-title">
                   <i
@@ -417,7 +430,7 @@
     <!--//features-section-->
 
     <section class="cta-section py-5 theme-bg-secondary text-center">
-      <div class="container">
+      <div class="wow lightSpeedIn container">
         <h3 class="text-white font-weight-bold mb-3">
           Ready to turn your visitors to app users?
         </h3>
@@ -801,11 +814,12 @@
           </div>
       </div>
 
+
     <!-- Javascript -->
-    <script
-      type="text/javascript"
-      src="assets/plugins/jquery-3.3.1.min.js"
-    ></script>
+    <script src="./assets/js/i18n.js"></script>
+    <!-- wow.js -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
     <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
     <script
       type="text/javascript"
