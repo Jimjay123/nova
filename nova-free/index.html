@@ -27,15 +27,15 @@
     <link id="theme-style" rel="stylesheet" href="assets/css/theme.css" />
     <!-- icon-font-->
     <link rel="stylesheet" href="assets/fonts/iconfont.css" />
-    <link rel="stylesheet" href="assets//css/animate.min.css">
+    <link rel="stylesheet" href="assets//css/animate.min.css" />
     <link rel="stylesheet" href="assets/css/default.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
     <script
-    type="text/javascript"
-    src="assets/plugins/jquery-3.3.1.min.js"
-  ></script>
-        <!-- 国际化 -->
-        <script src="./assets/lib/i18n/jquery.i18n.js"></script>  
+      type="text/javascript"
+      src="assets/plugins/jquery-3.3.1.min.js"
+    ></script>
+    <!-- 国际化 -->
+    <script src="./assets/lib/i18n/jquery.i18n.js"></script>
   </head>
 
   <body>
@@ -55,7 +55,7 @@
               >
             </h1>
             <!-- 右边的工具栏 -->
-            <div class="tool-box ">
+            <div class="tool-box">
               <div class="lans">
                 <i class="iconfont icon-duoyuyan"><div class="space"></div></i>
                 <div class="select-box">
@@ -72,48 +72,58 @@
       <!--//branding-->
     </header>
     <!--//header-->
-              <!-- 特效导航栏 -->
-   <div class="menu-box">
-    <main>
-      <div class='wrap'>
-      	<input type='checkbox' id='checking' style='display:none;' />
-      	<button class='blob'><a href="#">常见问题答疑</a></button>
-      	<button class='blob'><a href="#">联系我们</a></button>
-      	<button class='blob'><a href="#">开发文档</a></button>
-      	<button class='blob'><a href="#">社区论坛</a></button>
-      	<!-- <button class='blob'><a href="#">使用教程</a></button> -->
-      	<!-- <button class='blob'><a href="#">邮箱</a></button> -->
-      	<button class='blob'><a href="#">钱包下载</a></button>
-      	<label class='blob' for='checking'>
-          <span class='bar'></span>      
-          <span class='bar'></span>
-          <span class='bar'></span>
-        </label>
-      </div>  
-    </main>
-    <svg style="width: 20px;">
-		<defs>
-			<filter id="filt">
-				<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-				<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="filt" />
-				<feBlend in2="filt" in="SourceGraphic" result="mix" />
-			</filter>
-		</defs>
-  </svg>
-   </div>
+    <!-- 特效导航栏 -->
+    <div class="menu-box">
+      <main>
+        <div class="wrap">
+          <input type="checkbox" id="checking" style="display: none" />
+          <button class="blob"><a href="#">常见问题答疑</a></button>
+          <button class="blob"><a href="#">联系我们</a></button>
+          <button class="blob"><a href="#">开发文档</a></button>
+          <button class="blob"><a href="#">社区论坛</a></button>
+          <!-- <button class='blob'><a href="#">使用教程</a></button> -->
+          <!-- <button class='blob'><a href="#">邮箱</a></button> -->
+          <button class="blob"><a href="#">钱包下载</a></button>
+          <label class="blob" for="checking">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </label>
+        </div>
+      </main>
+      <svg style="width: 20px">
+        <defs>
+          <filter id="filt">
+            <feGaussianBlur
+              in="SourceGraphic"
+              result="blur"
+              stdDeviation="10"
+            />
+            <feColorMatrix
+              in="blur"
+              mode="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+              result="filt"
+            />
+            <feBlend in2="filt" in="SourceGraphic" result="mix" />
+          </filter>
+        </defs>
+      </svg>
+    </div>
 
     <section class="hero-section">
       <div class="container">
         <div class="row figure-holder">
           <div id="hero-section-left" class="col-12 col-md-6 pt-3 pt-md-4">
-            <h2 i18n="i18n.title1" class="site-headline font-weight-bold mt-lg-5 pt-lg-5">
-            </h2>
-            <div i18n="i18n.title2" class="site-tagline mb-3">
-            </div>
+            <h2
+              i18n="i18n.title1"
+              class="site-headline font-weight-bold mt-lg-5 pt-lg-5"
+            ></h2>
+            <div i18n="i18n.title2" class="site-tagline mb-3"></div>
             <div class="cta-btns">
               <div class="">
                 <a
-                style="visibility: hidden;"
+                  style="visibility: hidden"
                   class="btn btn-primary font-weight-bold theme-btn"
                   href="#nova-bootstrap-landing-page-template-for-mobile-apps/"
                   >Try Nova for FREE</a
@@ -122,21 +132,25 @@
               <ul
                 class="app-stores list-unstyled list-inline mx-auto mx-md-0 d-inline-block"
               >
-                <li  class="mobile-platform list-inline-item mr-3">
+                <li class="mobile-platform list-inline-item mr-3">
                   <a href="#">
-                    
-                    <i style="color:#fff;font-size: 30px;" class="iconfont icon-icon--"></i>
+                    <i
+                      style="color: #fff; font-size: 30px"
+                      class="iconfont icon-icon--"
+                    ></i>
                     <div class="txt">手机下载</div>
                   </a>
-
                 </li>
                 <li class="pc-platform list-inline-item">
                   <a href="#">
-                    <img style="float:left;width: 50px;" src="./assets/images/pc.svg" alt="">
+                    <img
+                      style="float: left; width: 50px"
+                      src="./assets/images/pc.svg"
+                      alt=""
+                    />
                     <!-- <i style="color:#fff;font-size: 30px;" class="iconfont icon-diannao1"></i> -->
                     <div class="txt">电脑下载</div>
                   </a>
-
                 </li>
               </ul>
             </div>
@@ -148,65 +162,68 @@
 
     <!-- 电脑的蒙层 -->
     <div class="pc-download-mask">
-      <div class="close-icon"><img src="./assets/images/close.svg" alt=""></div>
+      <div class="close-icon">
+        <img src="./assets/images/close.svg" alt="" />
+      </div>
       <div class="cs-options">
-          <div class="cs-optgroup">
-            <div class="item">
-              <a href="#">
-                <div class="single-btn">
-                  <i class="iconfont icon-windows"></i>
-                  <div class="txt">Windows</div>
-                  </div>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <div class="single-btn">
-                  <i class="iconfont icon-linux"></i>
-                  <div class="txt">Linux</div>
-                </div>
-              </a>
-            </div>
+        <div class="cs-optgroup">
+          <div class="item">
+            <a href="#">
+              <div class="single-btn">
+                <i class="iconfont icon-windows"></i>
+                <div class="txt">Windows</div>
+              </div>
+            </a>
           </div>
-          <div class="cs-optgroup">
-            <div class="item">
-              <a href="#">
-                <div class="single-btn">
-                  <i class="iconfont icon-mac"></i>
-                  <div class="txt">Mac OS</div>
-                </div>
-              </a>
-            </div>
+          <div class="item">
+            <a href="#">
+              <div class="single-btn">
+                <i class="iconfont icon-linux"></i>
+                <div class="txt">Linux</div>
+              </div>
+            </a>
           </div>
+        </div>
+        <div class="cs-optgroup">
+          <div class="item">
+            <a href="#">
+              <div class="single-btn">
+                <i class="iconfont icon-mac"></i>
+                <div class="txt">Mac OS</div>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     <!--  -->
     <div class="mobile-download-mask">
-      <div class="close-icon"><img src="./assets/images/close.svg" alt=""></div>
+      <div class="close-icon">
+        <img src="./assets/images/close.svg" alt="" />
+      </div>
       <div class="cs-options">
-          <div class="cs-optgroup">
-            <div class="item">
-              <a href="#">
-                <div class="single-btn">
-                  <i class="iconfont icon-android"></i>
-                  <div class="txt">Android</div>
-                  </div>
-              </a>
-            </div>
+        <div class="cs-optgroup">
+          <div class="item">
+            <a href="#">
+              <div class="single-btn">
+                <i class="iconfont icon-android"></i>
+                <div class="txt">Android</div>
+              </div>
+            </a>
           </div>
-          <div class="cs-optgroup">
-            <div class="item">
-              <a href="#">
-                <div class="single-btn">
-                  <i class="iconfont icon-ios"></i>
-                  <div class="txt">Ios</div>
-                </div>
-              </a>
-            </div>
+        </div>
+        <div class="cs-optgroup">
+          <div class="item">
+            <a href="#">
+              <div class="single-btn">
+                <i class="iconfont icon-ios"></i>
+                <div class="txt">Ios</div>
+              </div>
+            </a>
           </div>
+        </div>
       </div>
     </div>
-
 
     <!-- <section class="benefits-section py-5">
       <div class="container py-lg-5">
@@ -269,16 +286,19 @@
     <section class="features-section py-5">
       <div class="container py-lg-5">
         <h3 class="mb-3 text-center font-weight-bold section-heading">
-         社区论坛
+          社区论坛
         </h3>
         <div class="row pt-5 mb-5 features-section-row">
-          <div style="position:relative" class="wow fadeInLeft  col-md-6 col-xl-5 offset-xl-1 d-none d-md-block">
+          <div
+            style="position: relative"
+            class="wow fadeInLeft col-md-6 col-xl-5 offset-xl-1 d-none d-md-block"
+          >
             <img
               class="product-figure product-figure-1 img-fluid"
               src="assets/images/product-figure-1.png"
               alt=""
             />
-            
+
             <!-- 闪烁的地图指标 -->
             <div class="vault-tec-loader">
               <div class="circles">
@@ -286,8 +306,7 @@
               </div>
               <div class="left-lines"></div>
               <div class="right-lines"></div>
-           </div>
-
+            </div>
           </div>
 
           <div class="feature-list col-12 col-md-6 col-xl-5 pr-xl-3 pt-md-3">
@@ -301,9 +320,7 @@
                 </h5>
                 <p class="card-text">
                   下载点网页上方的按钮获取链接，或到瑞波QQ群703611153里下载。官网教程用的桌面钱包太老（2015年推出的），要下载最新的，可以一键切换XAG网络。除此之外
-                  <a
-                    href="https://download.ripplefox.com/"
-                    target="_blank"
+                  <a href="https://download.ripplefox.com/" target="_blank"
                     >瑞波官网</a
                   >也可以下载
                 </p>
@@ -324,11 +341,10 @@
                 </h5>
                 <p class="card-text">
                   第一步：下载钱包,下载地址请看精华帖：<a
-                  href="https://xagfans.com/thread-27-1-1.html"
-                  target="_blank"
-                  >https://xagfans.com/thread-27-1-1.html</a
-                >下载了桌面钱包后。运行狐狸图标，然后选创建新账户。然后找一个地方保存你的钱包文件，再输入密码,你可以把助记词抄下来，然后再导入到手机钱包.第二步:导入助记词建立手机钱包,手机打开XAGToken钱包，选择恢复钱包即可
-                  
+                    href="https://xagfans.com/thread-27-1-1.html"
+                    target="_blank"
+                    >https://xagfans.com/thread-27-1-1.html</a
+                  >下载了桌面钱包后。运行狐狸图标，然后选创建新账户。然后找一个地方保存你的钱包文件，再输入密码,你可以把助记词抄下来，然后再导入到手机钱包.第二步:导入助记词建立手机钱包,手机打开XAGToken钱包，选择恢复钱包即可
                 </p>
                 <a href="https://xagfans.com/thread-76-1-1.html"
                   >更多 <span class="more-arrow">&rarr;</span></a
@@ -336,7 +352,7 @@
               </div>
             </div>
             <!--//card-->
-            <div class="wow fadeInRight  card rounded border-0 shadow-lg">
+            <div class="wow fadeInRight card rounded border-0 shadow-lg">
               <div class="card-body p-4">
                 <h5 class="card-title">
                   <i
@@ -345,7 +361,8 @@
                   >瑞波钱包一键切换xag
                 </h5>
                 <p class="card-text">
-                  XAG源自瑞波，为了证明这一点。我们使用最新的瑞波钱包2.4来进行一键切换。第一步，点右上角的齿轮，并点击“设置”。第二步，点击XAG Fork网络。第三步，点保存。连上XAG网络后，如果要切换回瑞波主网，只要在设置页面，点一下“公共网络”，再点保存就好了。
+                  XAG源自瑞波，为了证明这一点。我们使用最新的瑞波钱包2.4来进行一键切换。第一步，点右上角的齿轮，并点击“设置”。第二步，点击XAG
+                  Fork网络。第三步，点保存。连上XAG网络后，如果要切换回瑞波主网，只要在设置页面，点一下“公共网络”，再点保存就好了。
                 </p>
                 <a href="https://xagfans.com/thread-60-1-1.html"
                   >更多 <span class="more-arrow">&rarr;</span></a
@@ -419,8 +436,8 @@
         <div class="pt-5 text-center">
           <a
             class="btn btn-primary theme-btn theme-btn-ghost font-weight-bold"
-            href="#"
-            >View all features</a
+            href="https://xagfans.com/forum-36-1.html"
+            >前往瑞波基因论坛</a
           >
         </div>
       </div>
@@ -690,19 +707,18 @@
     </section>
     <!--//testimonial-section-->
 
-        <!--====== GO TO TOP PART START ======-->
-    
-        <div class="go-top-area">
-          <div class="go-top-wrap">
-              <div class="go-top-btn-wrap">
-                  <div class="go-top go-top-btn">
-                      <i class="iconfont icon-up"></i>
-                      <i class="iconfont icon-up"></i>
-                  </div>
-              </div>
-          </div>
-      </div>
+    <!--====== GO TO TOP PART START ======-->
 
+    <div class="go-top-area">
+      <div class="go-top-wrap">
+        <div class="go-top-btn-wrap">
+          <div class="go-top go-top-btn">
+            <i class="iconfont icon-up"></i>
+            <i class="iconfont icon-up"></i>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Javascript -->
     <script src="./assets/js/i18n.js"></script>
@@ -720,7 +736,7 @@
       type="text/javascript"
       src="assets/plugins/jquery-flipster/dist/jquery.flipster.min.js"
     ></script>
-		<script type="text/javascript" src="assets/js/flipster-custom.js"></script>
-		<script src="assets/js/index.js"></script>
+    <script type="text/javascript" src="assets/js/flipster-custom.js"></script>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>
