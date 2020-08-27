@@ -91,7 +91,7 @@
         </label>
       </div>  
     </main>
-    <svg>
+    <svg style="width: 20px;">
 		<defs>
 			<filter id="filt">
 				<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
@@ -111,8 +111,9 @@
             <div i18n="i18n.title2" class="site-tagline mb-3">
             </div>
             <div class="cta-btns">
-              <div class="mb-4">
+              <div class="">
                 <a
+                style="visibility: hidden;"
                   class="btn btn-primary font-weight-bold theme-btn"
                   href="#nova-bootstrap-landing-page-template-for-mobile-apps/"
                   >Try Nova for FREE</a
@@ -121,21 +122,21 @@
               <ul
                 class="app-stores list-unstyled list-inline mx-auto mx-md-0 d-inline-block"
               >
-                <li class="list-inline-item mr-3">
-                  <a href="#"
-                    ><img
-                      class="ios"
-                      src="assets/images/appstore-apple.svg"
-                      alt="app-store"
-                  /></a>
+                <li  class="mobile-platform list-inline-item mr-3">
+                  <a href="#">
+                    
+                    <i style="color:#fff;font-size: 30px;" class="iconfont icon-icon--"></i>
+                    <div class="txt">手机下载</div>
+                  </a>
+
                 </li>
-                <li class="list-inline-item">
-                  <a href="#"
-                    ><img
-                      class="android"
-                      src="assets/images/appstore-android.svg"
-                      alt="google play"
-                  /></a>
+                <li class="pc-platform list-inline-item">
+                  <a href="#">
+                    <img style="float:left;width: 50px;" src="./assets/images/pc.svg" alt="">
+                    <!-- <i style="color:#fff;font-size: 30px;" class="iconfont icon-diannao1"></i> -->
+                    <div class="txt">电脑下载</div>
+                  </a>
+
                 </li>
               </ul>
             </div>
@@ -144,61 +145,70 @@
         <!--//row-->
       </div>
     </section>
-    <!--//hero-section-->
 
-    <section class="logos-section theme-bg-primary py-5 text-center">
-      <div class="container">
-        <h3 class="mb-5">Trusted by hundreds of software businesses</h3>
-        <div class="logos-row row mx-auto">
-          <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
-            <div class="item-inner">
-              <img src="assets/images/logos/logo-1.svg" alt="logo" />
+    <!-- 电脑的蒙层 -->
+    <div class="pc-download-mask">
+      <div class="close-icon"><img src="./assets/images/close.svg" alt=""></div>
+      <div class="cs-options">
+          <div class="cs-optgroup">
+            <div class="item">
+              <a href="#">
+                <div class="single-btn">
+                  <i class="iconfont icon-windows"></i>
+                  <div class="txt">Windows</div>
+                  </div>
+              </a>
             </div>
-            <!--//item-inner-->
-          </div>
-          <!--//item-->
-          <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
-            <div class="item-inner">
-              <img src="assets/images/logos/logo-2.svg" alt="logo" />
+            <div class="item">
+              <a href="#">
+                <div class="single-btn">
+                  <i class="iconfont icon-linux"></i>
+                  <div class="txt">Linux</div>
+                </div>
+              </a>
             </div>
-            <!--//item-inner-->
           </div>
-          <!--//item-->
-          <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
-            <div class="item-inner">
-              <img src="assets/images/logos/logo-3.svg" alt="logo" />
+          <div class="cs-optgroup">
+            <div class="item">
+              <a href="#">
+                <div class="single-btn">
+                  <i class="iconfont icon-mac"></i>
+                  <div class="txt">Mac OS</div>
+                </div>
+              </a>
             </div>
-            <!--//item-inner-->
           </div>
-          <!--//item-->
-          <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
-            <div class="item-inner">
-              <img src="assets/images/logos/logo-4.svg" alt="logo" />
-            </div>
-            <!--//item-inner-->
-          </div>
-          <!--//item-->
-          <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
-            <div class="item-inner">
-              <img src="assets/images/logos/logo-5.svg" alt="logo" />
-            </div>
-            <!--//item-inner-->
-          </div>
-          <!--//item-->
-          <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
-            <div class="item-inner">
-              <img src="assets/images/logos/logo-6.svg" alt="logo" />
-            </div>
-            <!--//item-inner-->
-          </div>
-          <!--//item-->
-        </div>
       </div>
-      <!--//container-->
-    </section>
-    <!--//logo-section-->
+    </div>
+    <!--  -->
+    <div class="mobile-download-mask">
+      <div class="close-icon"><img src="./assets/images/close.svg" alt=""></div>
+      <div class="cs-options">
+          <div class="cs-optgroup">
+            <div class="item">
+              <a href="#">
+                <div class="single-btn">
+                  <i class="iconfont icon-android"></i>
+                  <div class="txt">Android</div>
+                  </div>
+              </a>
+            </div>
+          </div>
+          <div class="cs-optgroup">
+            <div class="item">
+              <a href="#">
+                <div class="single-btn">
+                  <i class="iconfont icon-ios"></i>
+                  <div class="txt">Ios</div>
+                </div>
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
 
-    <section class="benefits-section py-5">
+
+    <!-- <section class="benefits-section py-5">
       <div class="container py-lg-5">
         <h3 class="mb-5 text-center font-weight-bold">
           Market your mobile app effectively with Nova
@@ -214,9 +224,9 @@
                 eget dolor. Aenean massa.
               </div>
             </div>
-            <!--//item-inner-->
+   
           </div>
-          <!--//item-->
+    
           <div class="item col-12 col-lg-4">
             <div class="item-inner text-center p-3 p-lg-5">
               <img class="mb-3" src="assets/images/icon-rocket.svg" alt="" />
@@ -227,9 +237,9 @@
                 eget dolor. Aenean massa.
               </div>
             </div>
-            <!--//item-inner-->
+
           </div>
-          <!--//item-->
+  
           <div class="item col-12 col-lg-4">
             <div class="item-inner text-center p-3 p-lg-5">
               <img class="mb-3" src="assets/images/icon-cogs.svg" alt="" />
@@ -240,11 +250,11 @@
                 eget dolor. Aenean massa.
               </div>
             </div>
-            <!--//item-inner-->
+     
           </div>
-          <!--//item-->
+     
         </div>
-        <!--//row-->
+     
         <div class="pt-3 text-center">
           <a
             class="btn btn-primary theme-btn theme-btn-ghost font-weight-bold"
@@ -254,12 +264,12 @@
         </div>
       </div>
     </section>
-    <!--//benefits-section-->
+    -->
 
     <section class="features-section py-5">
       <div class="container py-lg-5">
         <h3 class="mb-3 text-center font-weight-bold section-heading">
-          Feature Highlights
+         社区论坛
         </h3>
         <div class="row pt-5 mb-5 features-section-row">
           <div style="position:relative" class="wow fadeInLeft  col-md-6 col-xl-5 offset-xl-1 d-none d-md-block">
@@ -287,19 +297,18 @@
                   <i
                     class="far fa-chart-bar mr-2 mr-lg-3 text-primary fa-lg fa-fw"
                   ></i
-                  >Feature Lorem Ipsum
+                  >手机钱包下载
                 </h5>
                 <p class="card-text">
-                  List one of your product's main features here. The screenshots
-                  used in this template are taken from
+                  下载点网页上方的按钮获取链接，或到瑞波QQ群703611153里下载。官网教程用的桌面钱包太老（2015年推出的），要下载最新的，可以一键切换XAG网络。除此之外
                   <a
-                    href="#bootstrap-templates/product/appify-bootstrap-4-admin-template-for-app-developers/"
+                    href="https://download.ripplefox.com/"
                     target="_blank"
-                    >Bootstrap 4 admin template Appify</a
-                  >.
+                    >瑞波官网</a
+                  >也可以下载
                 </p>
-                <a href="#"
-                  >Learn more <span class="more-arrow">&rarr;</span></a
+                <a href="https://xagfans.com/thread-27-1-1.html"
+                  >更多 <span class="more-arrow">&rarr;</span></a
                 >
               </div>
             </div>
@@ -311,19 +320,18 @@
                   <i
                     class="fas fa-laptop-code mr-2 mr-lg-3 text-primary fa-lg fa-fw"
                   ></i
-                  >Feature Consectetuer
+                  >同时玩转手机钱包和桌面钱包
                 </h5>
                 <p class="card-text">
-                  List one of your product's main features here. The screenshots
-                  used in this template are taken from
-                  <a
-                    href="#bootstrap-templates/product/appify-bootstrap-4-admin-template-for-app-developers/"
-                    target="_blank"
-                    >Bootstrap 4 admin template Appify</a
-                  >.
+                  第一步：下载钱包,下载地址请看精华帖：<a
+                  href="https://xagfans.com/thread-27-1-1.html"
+                  target="_blank"
+                  >https://xagfans.com/thread-27-1-1.html</a
+                >下载了桌面钱包后。运行狐狸图标，然后选创建新账户。然后找一个地方保存你的钱包文件，再输入密码,你可以把助记词抄下来，然后再导入到手机钱包.第二步:导入助记词建立手机钱包,手机打开XAGToken钱包，选择恢复钱包即可
+                  
                 </p>
-                <a href="#"
-                  >Learn more <span class="more-arrow">&rarr;</span></a
+                <a href="https://xagfans.com/thread-76-1-1.html"
+                  >更多 <span class="more-arrow">&rarr;</span></a
                 >
               </div>
             </div>
@@ -334,19 +342,13 @@
                   <i
                     class="far fa-calendar-alt mr-2 mr-lg-3 text-primary fa-lg fa-fw"
                   ></i
-                  >Feature Lorem Ipsum
+                  >瑞波钱包一键切换xag
                 </h5>
                 <p class="card-text">
-                  List one of your product's main features here. The screenshots
-                  used in this template are taken from
-                  <a
-                    href="#bootstrap-templates/product/appify-bootstrap-4-admin-template-for-app-developers/"
-                    target="_blank"
-                    >Bootstrap 4 admin template Appify</a
-                  >.
+                  XAG源自瑞波，为了证明这一点。我们使用最新的瑞波钱包2.4来进行一键切换。第一步，点右上角的齿轮，并点击“设置”。第二步，点击XAG Fork网络。第三步，点保存。连上XAG网络后，如果要切换回瑞波主网，只要在设置页面，点一下“公共网络”，再点保存就好了。
                 </p>
-                <a href="#"
-                  >Learn more <span class="more-arrow">&rarr;</span></a
+                <a href="https://xagfans.com/thread-60-1-1.html"
+                  >更多 <span class="more-arrow">&rarr;</span></a
                 >
               </div>
             </div>
@@ -354,7 +356,7 @@
           </div>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
           <div
             class="wow fadeInRight col-12 col-md-6 col-xl-5 order-md-2 pr-xl-3 d-none d-md-block"
           >
@@ -388,15 +390,13 @@
                 >
               </div>
             </div>
-            <!--//card-->
-
             <div class="wow fadeInLeft card rounded border-0 shadow-lg">
               <div class="card-body p-4">
                 <h5 class="card-title">
                   <i
                     class="far fa-comments mr-2 mr-lg-3 text-primary fa-lg fa-fw"
                   ></i
-                  >Feature Ligula Eget
+                  >瑞波钱包一键切换xag
                 </h5>
                 <p class="card-text">
                   List one of your product's main features here. Lorem ipsum
@@ -413,9 +413,8 @@
                 >
               </div>
             </div>
-            <!--//card-->
           </div>
-        </div>
+        </div> -->
 
         <div class="pt-5 text-center">
           <a
@@ -691,116 +690,6 @@
     </section>
     <!--//testimonial-section-->
 
-    <footer class="footer theme-bg-primary">
-      <div class="container py-5 mb-3">
-        <div class="row">
-          <div class="footer-col col-6 col-lg-3">
-            <h4 class="col-heading">About Nova</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">Our Story</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Jobs</a></li>
-            </ul>
-          </div>
-          <!--//footer-col-->
-          <div class="footer-col col-6 col-lg-3">
-            <h4 class="col-heading">Resources</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">FAQs</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Developer APIs</a></li>
-            </ul>
-          </div>
-          <!--//footer-col-->
-          <div class="footer-col col-6 col-lg-3">
-            <h4 class="col-heading">Legal</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Terms of Services</a></li>
-              <li><a href="#">Security</a></li>
-            </ul>
-          </div>
-          <!--//footer-col-->
-          <div class="footer-col col-6 col-lg-3">
-            <h4 class="col-heading">Stay Connected</h4>
-            <ul class="social-list list-unstyled mb-0">
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-instagram fa-fw"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-twitter fa-fw"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-facebook-f fa-fw"></i></a>
-              </li>
-            </ul>
-            <!--//social-list-->
-
-            <div class="mb-2">
-              Company Name<br />
-              2419 Locust View Drive <br />
-              San Francisco, CA, 94143
-            </div>
-            <div>
-              <a href="#">hello@yourcompany.com</a>
-            </div>
-          </div>
-          <!--//footer-col-->
-        </div>
-        <!--//row-->
-      </div>
-      <!--//container-->
-      <div class="container">
-        <hr />
-      </div>
-      <div class="download-area py-4">
-        <div class="container text-center">
-          <h3 class="mb-3">Get the app</h3>
-          <div class="section-intro mb-4 single-col-max-width mx-auto">
-            Download our apps now. lorem ipsum dolor sit amet, consectetuer
-            adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-            sociis natoque penatibus et magnis dis.
-          </div>
-          <ul
-            class="app-stores list-unstyled list-inline mx-auto d-inline-block"
-          >
-            <li class="list-inline-item mr-3">
-              <a href="#"
-                ><img
-                  class="ios"
-                  src="assets/images/appstore-apple.svg"
-                  alt="app-store"
-              /></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#"
-                ><img
-                  class="android"
-                  src="assets/images/appstore-android.svg"
-                  alt="google play"
-              /></a>
-            </li>
-          </ul>
-        </div>
-        <!--//container-->
-      </div>
-      <!--//download-area-->
-      <div class="footer-bottom text-center pb-5">
-        <small class="copyright"
-          >Designed with <i class="fas fa-heart"></i> by 3rdwavemedia for
-          developers / More Templates
-          <a href="http://www.cssmoban.com/" target="_blank" title="模板之家"
-            >模板之家</a
-          >
-          - Collect from
-          <a href="http://www.cssmoban.com/" title="网页模板" target="_blank"
-            >网页模板</a
-          ></small
-        >
-      </div>
-    </footer>
         <!--====== GO TO TOP PART START ======-->
     
         <div class="go-top-area">

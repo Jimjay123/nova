@@ -63,7 +63,18 @@ $(function () {
       });
     }
   }
-  // 菜单栏的拖拽
+  // 显示下载蒙层
+$('.pc-platform').on('click',function(){
+  $('.pc-download-mask').addClass('active')
+})
+$('.mobile-platform').on('click',function(){
+  $('.mobile-download-mask').addClass('active')
+})
+// 关闭蒙层
+$('.close-icon').on('click',function(){
+  $('.pc-download-mask').removeClass('active')
+  $('.mobile-download-mask').removeClass('active')
+})
 
 });
 
