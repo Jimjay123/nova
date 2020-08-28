@@ -3,7 +3,10 @@ $(function () {
   let sectionRowScrollTop = $('.features-section').offset().top;
   //初始化wow.js
   new WOW().init();
-  //
+  //滚动条
+  $(".history-record").mCustomScrollbar({
+    scrollbarPosition:'outside'
+  })
   //  arriveToSp()
 
   // 滚动事件

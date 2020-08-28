@@ -706,7 +706,8 @@
 }
 
 // pc下載蒙層
-.pc-download-mask,.mobile-download-mask {
+.pc-download-mask,
+.mobile-download-mask {
   position: fixed;
   z-index: 9999999;
   left: 0;
@@ -774,7 +775,6 @@
           i {
             float: left;
             padding: 0 10px 0 20px;
-
           }
           .txt {
             float: left;
@@ -833,4 +833,221 @@
       font-weight: 500;
     }
   }
+}
+
+// 疑难问题解答
+.qs-container {
+  padding-bottom: 1rem;
+  .qs-content {
+    width: 100%;
+    height: 700px;
+    background-color: #eff2f5;
+    border-radius: 6px;
+  }
+}
+.wechart-box {
+  margin: 5px;
+  height: 660px;
+  display: flex;
+  .side-bar {
+    background-color: #2e3238;
+    flex: 2;
+
+    overflow: hidden;
+    .top-block {
+      padding: 9px 9px 0;
+      .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 2px;
+        overflow: hidden;
+        float: left;
+      }
+      .nickName {
+        float: left;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 15px;
+        color: #fff;
+      }
+    }
+    .search-input {
+      padding: 0 8px;
+      input {
+        margin: 10px 0;
+        padding: 0 10px;
+        width: 100%;
+        color: #fff;
+        height: 30px;
+        line-height: 30px;
+        border: 1px solid #3a3a3a;
+        border-radius: 4px;
+        outline: 0;
+        background-color: #26292e;
+      }
+    }
+    .m-list {
+      .list-item {
+        padding: 9px 15px;
+        overflow: hidden;
+        height: 30px;
+        box-sizing: initial;
+        background-color: #43474c;
+        .avatar {
+          width: 20px;
+          height: 20%;
+          margin-right: 15px;
+          float: left;
+          padding: 5px 0;
+        }
+        .txt {
+          float: left;
+          height: 100%;
+          line-height: 30px;
+          color: #fff;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .right-bar {
+    flex: 8;
+    background-color: #fff;
+    font-size: 14px;
+    .header-bar {
+      padding: 10px 15px;
+      border-bottom: 1px solid #eee;
+      color: #212b35;
+      font-size: 14px;
+    }
+    .history-record {
+      background-color: #f5f5f5;
+      height: 533px;
+      color: #4d4d4d;
+      .history-content {
+        height: 700px;
+        padding: 10px 15px;
+        .sort {
+          text-align: center;
+          margin-bottom: 10px;
+          .txt {
+            color: #fff;
+            padding: 0 18px;
+            display: inline-block;
+            background-color: #dcdcdc;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+    .remark-block {
+      height: 85px;
+      border-top: 1px solid #eee;
+      font-size: 14px;
+      color: rgba(144, 147, 153, 0.5);
+      padding: 10px 15px;
+    }
+  }
+}
+.q-s-box {
+  margin-bottom: 10px;
+  .my-box {
+    margin-bottom: 20px;
+    .avatar {
+      width: 30px;
+      height: 30px;
+      float: left;
+      margin-right: 10px;
+      img {
+        border-radius:2px ;
+      }
+    }
+    .txt {
+      display: inline-block;
+      position: relative;
+      padding: 0 10px;
+      max-width: calc(100% - 40px);
+      min-height: 30px;
+      line-height: 2;
+      font-size: 9pt;
+      text-align: left;
+      word-break: break-all;
+      background-color: #b2e281;
+      border-radius: 4px;
+      &::after {
+        content: " ";
+        position: absolute;
+        top: 9px;
+        right: 100%;
+        border: 6px solid transparent;
+        border-right-color: #b2e281;
+      }
+    }
+
+  }
+  .xag-admin-box {
+    text-align: right;
+    .avatar {
+      width: 30px;
+      height: 30px;
+      float: right;
+      margin-left: 10px;
+      img {
+        border-radius:2px ;
+      }
+    }
+    .txt {
+      display: inline-block;
+      position: relative;
+      padding: 0 10px;
+      max-width: calc(100% - 40px);
+      min-height: 30px;
+      line-height: 2;
+      font-size: 9pt;
+      text-align: left;
+      word-break: break-all;
+      background-color: #fff;
+      border-radius: 4px;
+      &::before {
+        content: " ";
+        position: absolute;
+        top: 9px;
+        border: 6px solid transparent;
+        right: inherit;
+        left: 100%;
+        border-right-color: transparent;
+        border-left-color: #fff;
+
+      }
+    }
+    
+  }
+}
+// 开发文档
+.dev-document {
+  background-color: #EFF2F5;
+}
+// 滚动条样式
+.mCSB_inside > .mCSB_container {
+  margin-right: 12px;
+}
+.mCSB_scrollTools {
+  width: 10px;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 5px;
+  background-color: #ccc;
+}
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #ccc;
+}
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #ccc;
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #f5f5f5;
+}
+.mCSB_outside + .mCSB_scrollTools {
+  right: 0;
 }

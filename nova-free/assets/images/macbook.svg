@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="309px" height="8px" viewBox="0 0 309 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>浏览器header</title>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="95.3611898%" id="linearGradient-1">
+            <stop stop-color="#E6E6E6" stop-opacity="0.2" offset="0%"></stop>
+            <stop stop-color="#E6E6E6" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+        <path d="M2.17937202,0 L306.567005,0 C307.770639,-2.21103966e-16 308.746377,0.975738091 308.746377,2.17937202 L308.746377,6.76086957 L308.746377,6.76086957 L0,6.76086957 L0,2.17937202 C-1.47402644e-16,0.975738091 0.975738091,-6.67074453e-16 2.17937202,0 Z" id="path-2"></path>
+    </defs>
+    <g id="🟡｜页面" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2-2-首页-移动端1" transform="translate(-33.000000, -595.000000)">
+            <g id="编组-3" transform="translate(0.000000, 541.000000)">
+                <g id="2⃣️Mockup/iPad" transform="translate(33.000000, 54.806277)">
+                    <g id="浏览器header/纯色" transform="translate(0.126812, 0.126812)">
+                        <g id="Window">
+                            <use fill="#EFF2F5" xlink:href="#path-2"></use>
+                            <use fill-opacity="0.1" fill="url(#linearGradient-1)" style="mix-blend-mode: multiply;" xlink:href="#path-2"></use>
+                        </g>
+                        <g id="编组" stroke-width="1" transform="translate(3.310924, 1.992508)">
+                            <circle id="Close" fill="#FF5F57" fill-rule="nonzero" cx="1.48991565" cy="1.48991565" r="1.48991565"></circle>
+                            <circle id="Minimize" fill="#FFBD2E" fill-rule="nonzero" cx="6.45630117" cy="1.48991565" r="1.48991565"></circle>
+                            <circle id="Maximize" fill="#27C940" fill-rule="nonzero" cx="11.0915943" cy="1.48991565" r="1.48991565"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

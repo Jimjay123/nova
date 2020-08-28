@@ -70,7 +70,7 @@ hr {
 
 h1,h2,h3,h4,h5,h6 {
 	margin-top: 0;
-	margin-bottom: .5rem
+	margin-bottom: 0
 }
 
 p {
@@ -314,7 +314,7 @@ template {
 }
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
-	margin-bottom: .5rem;
+	/* margin-bottom: .5rem; */
 	font-weight: 500;
 	line-height: 1.2
 }
@@ -329,6 +329,7 @@ h2,.h2 {
 
 h3,.h3 {
 	font-size: 1.75rem
+
 }
 
 h4,.h4 {
@@ -10047,3 +10048,23 @@ h1,h2,h3,h4,h5,h6 {
 	font-size: 0;
 	overflow: hidden;
 }
+
+/* 声明清除浮动的样式 */
+.clearfix:before,
+.clearfix:after {
+content: "";
+display: table;
+}
+.clearfix:after {
+clear: both;
+}
+/* ie6 7 专门清除浮动的样式*/
+.clearfix {
+*zoom:1;
+}
+
+.img-block {
+	display: block;
+	width: 100%;
+}
+
