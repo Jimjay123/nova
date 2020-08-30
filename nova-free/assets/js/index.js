@@ -81,3 +81,13 @@ $('.close-icon').on('click',function(){
 
 });
 
+
+
+$('.wap-header .wap-menu-btn').click(function(){
+ 
+  $('.wap-header .wap-menu-btn div').eq(1).toggle();
+  $('.wap-header .wap-menu-btn div').eq(0).toggleClass('menu-top-active');
+  $('.wap-header .wap-menu-btn div').eq(2).toggleClass('menu-bottom-active');
+  $('.wap-header-bottom').slideToggle();
+ 
+})
