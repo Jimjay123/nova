@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "2506215",
+      "name": "邮箱",
+      "font_class": "youxiang",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "3876518",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e677",
+      "unicode_decimal": 58999
+    },
+    {
+      "icon_id": "11981609",
+      "name": "facebook",
+      "font_class": "facebook",
+      "unicode": "e953",
+      "unicode_decimal": 59731
+    },
+    {
       "icon_id": "312448",
       "name": "windows",
       "font_class": "windows",
