@@ -6,7 +6,7 @@
     <!-- Meta -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="description" content="Bootstrap 4 Mobile App Template" />
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
     <link rel="shortcut icon" href="favicon.ico" />
@@ -88,11 +88,11 @@
     <!---nav-bottom---->
     <div class="wap-header-bottom">
       <ul>
-        <li><a href="#">常见问题答疑</a></li>
-        <li><a href="#">联系我们</a></li>
-        <li><a href="#">开发文档</a></li>
-        <li><a href="#">社区论坛</a></li>
-        <li><a href="#">钱包下载</a></li>
+        <li><a class="scroll" href="#menuHref1">钱包下载</a></li>
+        <li><a class="scroll" href="#menuHref2">社区论坛</a></li>
+        <li><a class="scroll" href="#menuHref3">常见问题答疑</a></li>
+        <li><a class="scroll" href="#menuHref4">开发文档</a></li>
+        <li><a class="scroll" href="#menuHref5">联系我们</a></li>
       </ul>
     </div>
     <!-- 特效导航栏 -->
@@ -100,13 +100,13 @@
       <main>
         <div class="wrap">
           <input type="checkbox" id="checking" style="display: none" />
-          <button class="blob"><a href="#">常见问题答疑</a></button>
-          <button class="blob"><a href="#">联系我们</a></button>
-          <button class="blob"><a href="#">开发文档</a></button>
-          <button class="blob"><a href="#">社区论坛</a></button>
+          <button class="blob"><a class="scroll" href="#menuHref3">常见问题答疑</a></button>
+          <button class="blob"><a class="scroll" href="#menuHref4">开发文档</a></button>
+          <button class="blob"><a class="scroll" href="#menuHref5">联系我们</a></button>
+          <button class="blob"><a class="scroll" href="#menuHref2">社区论坛</a></button>
           <!-- <button class='blob'><a href="#">使用教程</a></button> -->
           <!-- <button class='blob'><a href="#">邮箱</a></button> -->
-          <button class="blob"><a href="#">钱包下载</a></button>
+          <button class="blob"><a class="scroll" href="#menuHref1">钱包下载</a></button>
           <label class="blob" for="checking">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -134,22 +134,22 @@
       </svg>
     </div>
 
-    <section class="hero-section">
+    <section id="menuHref1" class="hero-section">
       <div class="container">
         <div class="row figure-holder">
           <div id="hero-section-left" class="col-12 col-md-6 pt-3 pt-md-4">
-            <!-- <h2
+            <h2
               i18n="i18n.title1"
               class="site-headline font-weight-bold mt-lg-5 pt-lg-5"
             ></h2>
-            <div i18n="i18n.title2" class="site-tagline mb-3"></div> -->
-            <h2 class="site-headline font-weight-bold mt-lg-5 pt-lg-5">
+            <div i18n="i18n.title2" class="site-tagline mb-3"></div>
+            <!-- <h2 class="site-headline font-weight-bold mt-lg-5 pt-lg-5">
               The best way to promote your app and convert users.
             </h2>
             <div class="site-tagline mb-3">
               High converting Bootstrap landing page template made for app
               developers. Built with Bootstrap 4 and Sass. Get started now!
-            </div>
+            </div> -->
             <div class="cta-btns">
               <div class="">
                 <a
@@ -165,7 +165,7 @@
                 <li class="mobile-platform list-inline-item mr-3">
                   <a href="#">
                     <i
-                      style="color: #fff; font-size: 30px"
+                      
                       class="iconfont icon-icon--"
                     ></i>
                     <div class="txt">手机下载</div>
@@ -256,7 +256,7 @@
     </div>
 
     <!-- 社区论坛 -->
-    <section class="features-section py-5">
+    <section id="menuHref2" class="features-section py-5">
       <div class="container py-lg-5">
         <div
           style="overflow: hidden"
@@ -370,7 +370,7 @@
     <!--//features-section-->
 
     <!-- 疑难问题解答 -->
-    <div class="qs-container">
+    <div id="menuHref3" class="qs-container">
       <div class="container">
         <div
           style="overflow: hidden"
@@ -385,7 +385,7 @@
           </div>
           <h3 class="text-center font-weight-bold float-left">疑难问题解答</h3>
         </div>
-        <div class="mt-5 qs-content">
+        <div class="mt-5 qs-content  wow zoomInDown">
           <div class="mac-bar">
             <img class="img-block" src="./assets/images/macbook.svg" alt="" />
           </div>
@@ -508,8 +508,9 @@
         </div>
       </div>
     </div>
-    <div class="dev-doc-container">
-      <!-- 文档 -->
+    <div id="menuHref4" class="dev-doc-container">
+     <div class="container">
+        <!-- 文档 -->
       <div class="dev-document">
         <div class="container">
           <div
@@ -602,6 +603,7 @@
           </div>
         </div>
       </div>
+     </div>
     </div>
 
     <!-- 
@@ -625,7 +627,7 @@
     <!--开发文档-->
 
     <!--联系我们-->
-    <section class="theme-bg-secondary text-center contact-us">
+    <section id="menuHref5" class="theme-bg-secondary text-center contact-us">
       <div class="row single-col-max-width">
         <div class="container col-sm-4 col-xs-12 flex-0-center">
           <i class="iconfont icon-github"></i> <span>电报: </span
@@ -678,6 +680,7 @@
       src="assets/plugins/jquery-flipster/dist/jquery.flipster.min.js"
     ></script>
     <script type="text/javascript" src="assets/js/flipster-custom.js"></script>
+    <script src="./assets/js/mao.js"></script>
     <script src="assets/js/index.js"></script>
   </body>
 </html>

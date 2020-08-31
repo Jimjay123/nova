@@ -9,6 +9,7 @@ function init18n(lan) {
     fileSuffix: "",
     // forever: true,
     callback: function() {
+      console.log(11);
 
     }
   });

@@ -103,7 +103,7 @@
     top: 20px;
     left: 20px;
     margin: auto;
-    width: 150px;
+    width: inherit;
     height: 100px;
     filter: url('../index.html/#filt');
     -webkit-filter: url('#filt');
@@ -125,6 +125,16 @@
     -moz-box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3) inset;
     -o-box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3) inset;
     -ms-box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3) inset;
+    a {
+      display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 80px
+    }
+    &:nth-child(2) a {
+      line-height: inherit;
+      padding-top: 20px;
+    }
     a:link {
       color: #1b1f2e;
     }
@@ -178,6 +188,10 @@
     background-color: #f6f9fd;
     &:hover {
       background-color: rgba(71, 176, 223, 0.5);
+    }
+    a {
+      line-height: inherit;
+      padding-top: 20px;
     }
   }
   .wrap > #checking:checked ~ .blob:nth-child(3) {
@@ -337,12 +351,12 @@
   top: 0;
   left: 0;
   right: 0;
-  box-shadow: 1px 1px 3px 2px #eee;
-  -webkit-box-shadow: 1px 1px 3px 2px #eee;
-  -webkit-box-shadow: 1px 1px 3px 2px #eee;
-  -moz-box-shadow: 1px 1px 3px 2px #eee;
-  -o-box-shadow: 1px 1px 3px 2px #eee;
-  -ms-box-shadow: 1px 1px 3px 2px #eee;
+  box-shadow: 1px 1px 10px 4px #eee;
+  -webkit-box-shadow: 1px 1px 10px 4px #eee;;
+  -webkit-box-shadow: 1px 1px 10px 4px #eee;;
+  -moz-box-shadow: 1px 1px 10px 4px #eee;;
+  -o-box-shadow: 1px 1px 10px 4px #eee;;
+  -ms-box-shadow: 1px 1px 10px 4px #eee;;
   background-color: #f6f9fd;
   z-index: 999;
 }
@@ -457,6 +471,7 @@
     top: 93%;
   }
 }
+
 
 .go-top-wrap {
   position: relative;
@@ -709,6 +724,7 @@
 // pc下載蒙層
 .pc-download-mask,
 .mobile-download-mask {
+
   position: fixed;
   z-index: 9999999;
   left: 0;
@@ -822,6 +838,30 @@
     height: 44px;
     background-color: #000;
     border-radius: 6px;
+    cursor: pointer;
+    transition:  all .3s;
+    border: 1px solid transparent;
+    &:hover {
+
+    background-color:#f7f7f7 ;
+    border: 1px solid rgb(117, 115, 115);
+    box-shadow: 1px 1px 10px 3px #eee;
+      -webkit-box-shadow: 1px 1px 10px 3px #eee;
+      -webkit-box-shadow: 1px 1px 10px 3px #eee;
+      -moz-box-shadow: 1px 1px 10px 3px #eee;
+      -o-box-shadow: 1px 1px 10px 3px #eee;
+      -ms-box-shadow: 1px 1px 10px 3px #eee;
+      .txt{
+        color: #212B35;
+      }
+      a i {
+        color:#212B35 ;
+      }
+    }
+    a i {
+      color: #fff;
+      font-size: 30px
+    }
     a i,
     a img {
       padding: 0 10px;
@@ -841,13 +881,14 @@
   padding-bottom: 1rem;
   .qs-content {
     width: 100%;
-    height: 700px;
+    padding-bottom: 5px;
     background-color: #eff2f5;
     border-radius: 6px;
   }
 }
 .wechart-box {
   margin: 5px;
+  margin-bottom: 0px;
   height: 660px;
   display: flex;
   .side-bar {
@@ -863,11 +904,12 @@
     .top-block {
       padding: 9px 9px 0;
       .avatar {
-        width: 40px;
-        height: 40px;
-        border-radius: 2px;
-        overflow: hidden;
         float: left;
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 2px;
+        }
       }
       .nickName {
         float: left;
@@ -948,7 +990,6 @@
       height: 533px;
       color: #4d4d4d;
       .history-content {
-        height: 700px;
         padding: 10px 15px;
         .sort {
           text-align: center;
@@ -1045,6 +1086,7 @@
 }
 // 开发文档
 .dev-doc-container {
+  padding-bottom: 3rem;
   background: -webkit-linear-gradient(
     left top,
     #f3eff545,
@@ -1210,3 +1252,22 @@
     display: none;
   }
 }
+@media only screen and (min-width: 320px) and (max-width: 414px) {
+  // .wechart-box .side-bar .top-block .nickName {
+  //   margin-left: 0;
+  //   width: 100%;
+  //   text-align: center;
+  // }
+  // .wechart-box .side-bar .top-block .avatar {
+  //   width: 100%;
+  //   img {
+  //     width: 40px;
+  //     height: 40px;
+  //     margin:  0 auto;
+  //   }
+  // }
+  .wechart-box .side-bar {
+    display: none;
+  }
+
+ }
